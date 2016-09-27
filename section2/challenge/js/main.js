@@ -15,3 +15,14 @@ $('.header').on('sticky-start', function () {
 $('.header').on('sticky-end', function () {
   $('.description').html('We build apps');
 });
+
+$('h5').sticky({
+  topSpacing: 60
+});
+$('h5').on('sticky-start', function () {
+  $('h5').html('Want us to work on your project? <a href="#">email us</a>');
+});
+
+$('h5').on('sticky-end', function () {
+  $('h5').html('Want us to work on your project?');
+});
