@@ -8,3 +8,10 @@ $(".animsition").animsition({
 
 $('.header').sticky();
 
+$('.header').on('sticky-start', function(){
+  $('.description').html('We build <strong>great</strong> apps');
+});
+
+$('.header').on('sticky-end', function (){
+  $('.description').html('We build apps');
+});
